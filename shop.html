@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Lu's Jewellery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Lu's Jewellery</h1>
+    </div>
+    
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="shop-main">
+   
+    <section class="shop-header">
+      <h2>Our Complete Collection</h2>
+      <p class="shop-intro">Explore all our carefully selected jewellery pieces. Find your perfect match!</p>
+    </section>
+
+    <div class="category-filters">
+      <button class="filter-btn active" data-category="all">All Products</button>
+      <button class="filter-btn" data-category="necklaces">Necklaces</button>
+      <button class="filter-btn" data-category="rings">Rings</button>
+      <button class="filter-btn" data-category="earrings">Earrings</button>
+      <button class="filter-btn" data-category="bracelets">Bracelets</button>
+      <button class="filter-btn" data-category="watches">Watches</button>
+      <button class="filter-btn" data-category="sets">Sets</button>
+    </div>
+
+    <section class="shop-products">
+      <div class="products-grid">
+       
+        <div class="product-card" data-category="necklaces">
+          <img src="images/necklace.jpg" alt="Gold Pearl Necklace - Elegant gold necklace with freshwater pearls">
+          <div class="product-info">
+            <h3>Gold Pearl Necklace</h3>
+            <p class="product-desc">Elegant gold necklace with freshwater pearls. Perfect for special occasions.</p>
+            <p class="price">4,950 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="rings">
+          <img src="images/ring.jpg" alt="Silver Diamond Ring - Sterling silver ring with diamond accent">
+          <div class="product-info">
+            <h3>Silver Diamond Ring</h3>
+            <p class="product-desc">Sterling silver ring with genuine diamond accent. Adjustable sizing available.</p>
+            <p class="price">999,970</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="earrings">
+          <img src="images/earrings.jpg" alt="Rose Gold Earrings - Delicate rose gold drop earrings">
+          <div class="product-info">
+            <h3>Rose Gold Earrings</h3>
+            <p class="product-desc">Delicate rose gold drop earrings. Hypoallergenic and lightweight.</p>
+            <p class="price">870 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="bracelets">
+          <img src="images/bracelet.jpg" alt="Classic Gold Bracelet - Simple and elegant gold chain bracelet">
+          <div class="product-info">
+            <h3>Classic Gold Bracelet</h3>
+            <p class="product-desc">Simple and elegant gold bracelet. Adjustable clasp for perfect fit.</p>
+            <p class="price">1,500 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="watches">
+<img src="images/watch.jpg" alt="Elegant Watch - Stylish gold-tone watch with leather strap">
+          <div class="product-info">
+            <h3>Elegant Watch</h3>
+            <p class="product-desc">Stylish gold-tone watch with cute bracelet. Water-resistant and precise.</p>
+            <p class="price">2,400 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="sets">
+          <img src="images/set.jpg" alt="Complete Jewellery Set - Matching necklace, ring, earrings, and bracelet set">
+          <div class="product-info">
+            <h3>Complete Jewellery Set</h3>
+            <p class="product-desc">Matching necklace, ring, earrings, and bracelet set. Perfect gift package.</p>
+            <p class="price">5,000 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-features">
+      <div class="feature">
+        <h3>✓ Free Shipping</h3>
+        <p>On all orders</p>
+      </div>
+      <div class="feature">
+        <h3>✓ 30-Day Returns</h3>
+        <p>Easy return policy</p>
+      </div>
+      <div class="feature">
+        <h3>✓ Quality Guarantee</h3>
+        <p>Premium materials used</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Lu's Jewellery. All rights reserved.</p>
+    <p><small>Discover beauty in every piece</small></p>
+  </footer>
+
+  <div class="modal-overlay" id="customModal">
+    <div class="modal">
+      <h3 id="modalTitle">Message</h3>
+      <div class="modal-content" id="modalContent">
+
+      </div>
+      <button class="modal-close" id="modalClose">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
