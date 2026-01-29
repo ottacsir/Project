@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Lu's Jewellery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Lu's Jewellery</h1>
+    </div>
+    
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <h2>Contact Us</h2>
+    <p class="contact-intro">Have questions? Send us a message!</p>
+
+    <div class="contact-layout">
+      <div class="contact-left">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <p>What is this about?</p>
+            <ul class="radio-list">
+              <li>
+                <input type="radio" id="question" name="subject" value="question">
+                <label for="question">I have a question</label>
+              </li>
+              <li>
+                <input type="radio" id="order" name="subject" value="order">
+                <label for="order">Order help</label>
+              </li>
+              <li>
+                <input type="radio" id="feedback" name="subject" value="feedback">
+                <label for="feedback">Feedback</label>
+              </li>
+              <li>
+                <input type="radio" id="other" name="subject" value="other">
+                <label for="other">Other</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-right">
+        <div class="store-image">
+          <img src="images/contact.jpg" alt="Lu's Jewellery Store" class="contact-page-image">
+        </div>
+
+        <section class="contact-info">
+          <h3>Our Information</h3>
+          <ul class="info-list">
+            <li><strong>Email:</strong> lusjewellery@gmail.com</li>
+            <li><strong>Phone:</strong> +251 91 155 0123</li>
+          </ul>
+
+          <div class="working-hours">
+            <h4>Working Hours</h4>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Monday - Friday:</span>
+                <span class="time">8:30 AM - 7:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Saturday:</span>
+                <span class="time">9:00 AM - 6:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Sunday:</span>
+                <span class="time">Closed</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+ 
+  <div class="modal-overlay" id="customModal">
+    <div class="modal">
+      <h3 id="modalTitle">Message</h3>
+      <div class="modal-content" id="modalContent">
+      </div>
+      <button class="modal-close" id="modalClose">OK</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Lu's Jewellery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
