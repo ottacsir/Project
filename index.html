@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lu's Jewellery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Lu's Jewellery</h1>
+      <p>Elegant pieces for everyday beauty</p>
+    </div>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Discover Timeless Jewellery</h2>
+        <p>Hand-picked pieces crafted to shine with you.</p>
+        <a href="shop.html" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Featured Collection</h2>
+      <p>Our most loved pieces</p>
+      
+      <div class="products-container">
+        <div class="product-card" data-category="necklaces">
+          <img src="images/necklace.jpg" alt="Gold Pearl Necklace - Elegant gold necklace with freshwater pearls">
+          <div class="product-info">
+            <h3>Gold Pearl Necklace</h3>
+            <p class="product-desc">Elegant gold necklace with freshwater pearls</p>
+            <p class="price">4,950 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="rings">
+          <img src="images/ring.jpg" alt="Silver Diamond Ring - Sterling silver ring with diamond accent">
+          <div class="product-info">
+            <h3>Silver Diamond Ring</h3>
+            <p class="product-desc">Sterling silver ring with diamond accent</p>
+            <p class="price">999,970 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="earrings">
+          <img src="images/earrings.jpg" alt="Rose Gold Earrings - Delicate rose gold drop earrings">
+          <div class="product-info">
+            <h3>Rose Gold Earrings</h3>
+            <p class="product-desc">Delicate rose gold drop earrings</p>
+            <p class="price">870 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="bracelets">
+          <img src="images/bracelet.jpg" alt="Classic Gold Bracelet - Simple and elegant gold chain bracelet">
+          <div class="product-info">
+            <h3>Classic Gold Bracelet</h3>
+            <p class="product-desc">Simple and elegant gold bracelet</p>
+            <p class="price">1,500 ETB</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Why Choose Lu's Jewellery?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>✧ Handcrafted Quality</h3>
+          <p>Each piece is carefully crafted with attention to detail and superior craftsmanship.</p>
+        </div>
+        <div class="feature">
+          <h3>✧ Premium Materials</h3>
+          <p>We use only the finest metals and genuine gemstones for lasting beauty.</p>
+        </div>
+        <div class="feature">
+          <h3>✧ Free Shipping</h3>
+          <p>Free delivery on all orders. Easy returns within 30 days.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Lu's Jewellery. All rights reserved.</p>
+    <p><small>Elegance you can wear every day</small></p>
+  </footer>
+
+  <div class="modal-overlay" id="customModal">
+    <div class="modal">
+      <h3 id="modalTitle">Message</h3>
+      <div class="modal-content" id="modalContent">
+      
+      </div>
+      <button class="modal-close" id="modalClose">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
