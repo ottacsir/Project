@@ -33,8 +33,6 @@ function calculateTotal() {
 function updateCartDisplay() {
   const cartContainer = document.getElementById('cartItems');
   const emptyMsg = document.getElementById('emptyCartMessage');
-  const totalItems = document.getElementById('totalItems');
-  const subtotalEl = document.getElementById('subtotal');
   const totalPriceEl = document.getElementById('totalPrice');
   const checkoutBtn = document.getElementById('checkoutBtn');
   
@@ -43,8 +41,6 @@ function updateCartDisplay() {
   if (cart.length === 0) {
     if (emptyMsg) emptyMsg.style.display = 'block';
     cartContainer.innerHTML = '';
-    if (totalItems) totalItems.textContent = '0';
-    if (subtotalEl) subtotalEl.textContent = '0.00';
     if (totalPriceEl) totalPriceEl.textContent = '0.00';
     if (checkoutBtn) checkoutBtn.disabled = true;
     return;
@@ -84,8 +80,6 @@ function updateCartDisplay() {
     cartContainer.innerHTML += cartItemHTML;
   });
   
-  if (totalItems) totalItems.textContent = itemsCount;
-  if (subtotalEl) subtotalEl.textContent = priceTotal.toFixed(2);
   if (totalPriceEl) totalPriceEl.textContent = priceTotal.toFixed(2);
   if (checkoutBtn) checkoutBtn.disabled = false;
   
@@ -250,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       
       const total = calculateTotal();
-      summary += `<br><strong>Total: $${total}</strong>`;
+      summary += `<br><strong>Total: ${total} ETB</strong>`;
       summary += `<br><br>Thank you for your order!<br>`;
       
       showModal('Order Confirmed!', summary);
